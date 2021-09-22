@@ -7,14 +7,14 @@ POST {{baseUrl}}/products/
 Content-Type: application/json
 
 {
-  "title": "Апельсины",
+  "title": "Арбуз",
   "description": "Лучшие помидоры на рынке"
 }
 
 ###
 
 # получение продуктов
-GET {{baseUrl}}/stocks/
+GET {{baseUrl}}/products/
 Content-Type: application/json
 
 ###
@@ -46,7 +46,7 @@ POST {{baseUrl}}/stocks/
 Content-Type: application/json
 
 {
-  "address": "111113",
+  "address": "1112311213",
   "positions": [
     {
       "product": 2,
@@ -72,12 +72,11 @@ Content-Type: application/json
     {
       "product": 2,
       "quantity": 100,
-      "price": 130.801  
+      "price": 130.80  
     },
     {
       "product": 3,
-      "quantity": 243,
-      "price": 145
+      "quantity": 100
     }
   ]
 }
@@ -85,5 +84,5 @@ Content-Type: application/json
 ###
 
 # поиск складов, где есть определенный продукт
-GET {{baseUrl}}/stocks/?products=Апельсин
+GET {{baseUrl}}/stocks/?products=3
 Content-Type: application/json
